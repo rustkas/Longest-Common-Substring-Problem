@@ -1,0 +1,6 @@
+[package]
+name = "find_longest_substring"
+version = "0.1.0"
+authors = ["Kosorukov Anatolij <developer@languages-with-music.com>"]
+
+[dependencies]

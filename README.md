@@ -13,3 +13,6 @@ Have fun.
 ### Additional information
 * [Best Algorithms and Data Structures Books](http://www.softpanorama.org/Bookshelf/Computers/algorithms.shtml)
 * [Recommended Links](http://www.softpanorama.org/Algorithms/lcs.shtml#Recommended_Links)
+
+#### Rust information
+* rustc 1.32.0-nightly
