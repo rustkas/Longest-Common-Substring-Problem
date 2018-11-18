@@ -5,9 +5,9 @@
 extern crate find_longest_substring;
 /*
 cargo test --test test1
-cargo test --test test1 test_iter1 -- --nocapture
-cargo test --test test1 test_make_string_info -- --nocapture
-cargo test --test test1 test_create_max_string -- --nocapture
+cargo test --test test1 iter1 -- --nocapture
+cargo test --test test1 make_string_info -- --nocapture
+cargo test --test test1 create_max_string -- --nocapture
 */
 
 #[cfg(test)]
@@ -389,22 +389,22 @@ mod tests {
     }
 
     #[test]
-    //cargo test --test test1 test_longest_substring_1 -- --nocapture
-    fn test_longest_substring_1() {
+    //cargo test --test test1 longest_substring_1 -- --nocapture
+    fn longest_substring_1() {
         let value = longest_substring("");
         assert_eq!("", value);
     }
 
     #[test]
-    //cargo test --test test1 test_longest_substring_2 -- --nocapture
-    fn test_longest_substring_2() {
+    //cargo test --test test1 longest_substring_2 -- --nocapture
+    fn longest_substring_2() {
         let value = longest_substring("1");
         assert_eq!("1", value);
     }
 
     #[test]
-    //cargo test --test test1 test_longest_substring_3 -- --nocapture
-    fn test_longest_substring_3() {
+    //cargo test --test test1 longest_substring_3 -- --nocapture
+    fn longest_substring_3() {
         assert_eq!(
             "ADDAADDAADDAADDAADDA",
             longest_substring("ADDAADDASWADDAADDAADDAADDAADDA")
@@ -412,18 +412,20 @@ mod tests {
     }
 
     #[test]
-    //cargo test --test test1 test_longest_substring_4 -- --nocapture
-    fn test_longest_substring_4() {
+    //cargo test --test test1 longest_substring_4 -- --nocapture
+    fn longest_substring_4() {
         assert_eq!("acaa", longest_substring("abcabacaa"));
     }
 
     #[test]
-    //cargo test --test test1 test_longest_substring_5 -- --nocapture
-    fn test_longest_substring_5() {
+    //cargo test --test test1 longest_substring_5 -- --nocapture
+    fn longest_substring_5() {
         assert_eq!(
             "CACCA",
             longest_substring("ATGAGTGTCTAATACCGAAGACGTCACCAGGCTCAACATATCTCTAGTTTAGCACCCTTA")
         );
     }
+
+
 
 }
